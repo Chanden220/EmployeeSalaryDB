@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="Accountants">
+      <EntityTypeMapping TypeName="Database1Model.Accountant">
+        <MappingFragment StoreEntitySet="Accountant">
+          <ScalarProperty Name="AccountantNo" ColumnName="AccountantNo" />
+          <ScalarProperty Name="AccountantName" ColumnName="AccountantName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Allowances">
+      <EntityTypeMapping TypeName="Database1Model.Allowance">
+        <MappingFragment StoreEntitySet="Allowance">
+          <ScalarProperty Name="TimeWorkNo" ColumnName="TimeWorkNo" />
+          <ScalarProperty Name="TimeWork" ColumnName="TimeWork" />
+          <ScalarProperty Name="Allowance1" ColumnName="Allowance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BaseSalaries">
+      <EntityTypeMapping TypeName="Database1Model.BaseSalary">
+        <MappingFragment StoreEntitySet="BaseSalary">
+          <ScalarProperty Name="PositionNo" ColumnName="PositionNo" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="BaseSalary1" ColumnName="BaseSalary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="Database1Model.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="Database1Model.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="StatusNo" ColumnName="StatusNo" />
+          <ScalarProperty Name="Status1" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

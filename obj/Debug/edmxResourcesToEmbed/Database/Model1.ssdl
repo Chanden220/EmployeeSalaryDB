@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeSalaryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accountant">
+    <Key>
+      <PropertyRef Name="AccountantNo" />
+    </Key>
+    <Property Name="AccountantNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="AccountantName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Allowance">
+    <Key>
+      <PropertyRef Name="TimeWorkNo" />
+    </Key>
+    <Property Name="TimeWorkNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TimeWork" Type="varchar" MaxLength="100" />
+    <Property Name="Allowance" Type="float" />
+  </EntityType>
+  <EntityType Name="BaseSalary">
+    <Key>
+      <PropertyRef Name="PositionNo" />
+    </Key>
+    <Property Name="PositionNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Position" Type="varchar" MaxLength="10" />
+    <Property Name="BaseSalary" Type="float" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Name="EmpNo" Type="int" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="30" />
+    <Property Name="Sex" Type="varchar" MaxLength="1" />
+    <Property Name="DOB" Type="varchar" MaxLength="30" />
+    <Property Name="Job" Type="varchar" MaxLength="20" />
+    <Property Name="Locations" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'EmployeeSalary.dbo.EmployeeSalary' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="EmployeeSalary">
+          <Property Name="EmpNo" Type="int" />
+          <Property Name="RemitDate" Type="varchar" MaxLength="30" />
+          <Property Name="PositionNo" Type="varchar" MaxLength="10" />
+          <Property Name="TimeWorkNo" Type="varchar" MaxLength="10" />
+          <Property Name="OtherWage" Type="float" />
+          <Property Name="GrossSalary" Type="float" />
+          <Property Name="TaxDeducted" Type="float" />
+          <Property Name="NetSalary" Type="float" />
+          <Property Name="AccountantNo" Type="varchar" MaxLength="10" />
+          <Property Name="StatusNo" Type="varchar" MaxLength="10" />
+        </EntityType>-->
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusNo" />
+    </Key>
+    <Property Name="StatusNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+error 6004: The table 'EmployeeSalary.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__Accou__49C3F6B7" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'EmployeeSalary.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__EmpNo__46E78A0C" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'EmployeeSalary.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__Posit__47DBAE45" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'EmployeeSalary.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__Statu__4AB81AF0" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'EmployeeSalary.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__TimeW__48CFD27E" />-->
+  <EntityContainer Name="EmployeeSalaryModelStoreContainer">
+    <EntitySet Name="Accountant" EntityType="Self.Accountant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Allowance" EntityType="Self.Allowance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BaseSalary" EntityType="Self.BaseSalary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

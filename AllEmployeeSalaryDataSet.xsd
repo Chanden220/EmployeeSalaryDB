@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AllEmployeeSalaryDataSet" targetNamespace="http://tempuri.org/AllEmployeeSalaryDataSet.xsd" xmlns:mstns="http://tempuri.org/AllEmployeeSalaryDataSet.xsd" xmlns="http://tempuri.org/AllEmployeeSalaryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EmployeeSalaryConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EmployeeSalaryConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EmployeeDB.Properties.Settings.GlobalReference.Default.EmployeeSalaryConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmployeeSalaryViewsTableAdapter" GeneratorDataComponentClassName="EmployeeSalaryViewsTableAdapter" Name="EmployeeSalaryViews" UserDataComponentName="EmployeeSalaryViewsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EmployeeSalaryConnectionString1 (Settings)" DbObjectName="EmployeeSalary.dbo.EmployeeSalaryViews" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FullName, RemitDate, Position, TimeWork, GrossSalary, TaxDeducted, NetSalary, AccountantName, Status, Method FROM dbo.EmployeeSalaryViews</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="RemitDate" DataSetColumn="RemitDate" />
+              <Mapping SourceColumn="Position" DataSetColumn="Position" />
+              <Mapping SourceColumn="TimeWork" DataSetColumn="TimeWork" />
+              <Mapping SourceColumn="GrossSalary" DataSetColumn="GrossSalary" />
+              <Mapping SourceColumn="TaxDeducted" DataSetColumn="TaxDeducted" />
+              <Mapping SourceColumn="NetSalary" DataSetColumn="NetSalary" />
+              <Mapping SourceColumn="AccountantName" DataSetColumn="AccountantName" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Method" DataSetColumn="Method" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AllEmployeeSalaryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="AllEmployeeSalaryDataSet" msprop:Generator_DataSetName="AllEmployeeSalaryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EmployeeSalaryViews" msprop:Generator_RowEvHandlerName="EmployeeSalaryViewsRowChangeEventHandler" msprop:Generator_RowDeletedName="EmployeeSalaryViewsRowDeleted" msprop:Generator_RowDeletingName="EmployeeSalaryViewsRowDeleting" msprop:Generator_RowEvArgName="EmployeeSalaryViewsRowChangeEvent" msprop:Generator_TablePropName="EmployeeSalaryViews" msprop:Generator_RowChangedName="EmployeeSalaryViewsRowChanged" msprop:Generator_RowChangingName="EmployeeSalaryViewsRowChanging" msprop:Generator_TableClassName="EmployeeSalaryViewsDataTable" msprop:Generator_RowClassName="EmployeeSalaryViewsRow" msprop:Generator_TableVarName="tableEmployeeSalaryViews" msprop:Generator_UserTableName="EmployeeSalaryViews">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_UserColumnName="FullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RemitDate" msprop:Generator_ColumnPropNameInRow="RemitDate" msprop:Generator_ColumnPropNameInTable="RemitDateColumn" msprop:Generator_ColumnVarNameInTable="columnRemitDate" msprop:Generator_UserColumnName="RemitDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Position" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_UserColumnName="Position" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TimeWork" msprop:Generator_ColumnPropNameInRow="TimeWork" msprop:Generator_ColumnPropNameInTable="TimeWorkColumn" msprop:Generator_ColumnVarNameInTable="columnTimeWork" msprop:Generator_UserColumnName="TimeWork" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GrossSalary" msprop:Generator_ColumnPropNameInRow="GrossSalary" msprop:Generator_ColumnPropNameInTable="GrossSalaryColumn" msprop:Generator_ColumnVarNameInTable="columnGrossSalary" msprop:Generator_UserColumnName="GrossSalary" type="xs:double" minOccurs="0" />
+              <xs:element name="TaxDeducted" msprop:Generator_ColumnPropNameInRow="TaxDeducted" msprop:Generator_ColumnPropNameInTable="TaxDeductedColumn" msprop:Generator_ColumnVarNameInTable="columnTaxDeducted" msprop:Generator_UserColumnName="TaxDeducted" type="xs:double" minOccurs="0" />
+              <xs:element name="NetSalary" msprop:Generator_ColumnPropNameInRow="NetSalary" msprop:Generator_ColumnPropNameInTable="NetSalaryColumn" msprop:Generator_ColumnVarNameInTable="columnNetSalary" msprop:Generator_UserColumnName="NetSalary" type="xs:double" minOccurs="0" />
+              <xs:element name="AccountantName" msprop:Generator_ColumnPropNameInRow="AccountantName" msprop:Generator_ColumnPropNameInTable="AccountantNameColumn" msprop:Generator_ColumnVarNameInTable="columnAccountantName" msprop:Generator_UserColumnName="AccountantName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Method" msprop:Generator_ColumnPropNameInRow="Method" msprop:Generator_ColumnPropNameInTable="MethodColumn" msprop:Generator_ColumnVarNameInTable="columnMethod" msprop:Generator_UserColumnName="Method" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeSalaryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Accountant">
+    <Key>
+      <PropertyRef Name="AccountantNo" />
+    </Key>
+    <Property Name="AccountantNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountantName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Allowance">
+    <Key>
+      <PropertyRef Name="TimeWorkNo" />
+    </Key>
+    <Property Name="TimeWorkNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TimeWork" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Allowance1" Type="Double" />
+  </EntityType>
+  <EntityType Name="BaseSalary">
+    <Key>
+      <PropertyRef Name="PositionNo" />
+    </Key>
+    <Property Name="PositionNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Position" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BaseSalary1" Type="Double" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmpNo" />
+    </Key>
+    <Property Name="EmpNo" Type="Int32" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Sex" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Job" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Locations" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusNo" />
+    </Key>
+    <Property Name="StatusNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="EmployeeSalaryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accountants" EntityType="Self.Accountant" />
+    <EntitySet Name="Allowances" EntityType="Self.Allowance" />
+    <EntitySet Name="BaseSalaries" EntityType="Self.BaseSalary" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

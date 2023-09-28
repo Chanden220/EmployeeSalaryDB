@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EmployeeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Accountant">
+          <Key>
+            <PropertyRef Name="AccountantNo" />
+          </Key>
+          <Property Name="AccountantNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="AccountantName" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Allowance">
+          <Key>
+            <PropertyRef Name="TimeWorkNo" />
+          </Key>
+          <Property Name="TimeWorkNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="TimeWork" Type="varchar" MaxLength="100" />
+          <Property Name="Allowance" Type="float" />
+        </EntityType>
+        <EntityType Name="BaseSalary">
+          <Key>
+            <PropertyRef Name="PositionNo" />
+          </Key>
+          <Property Name="PositionNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Position" Type="varchar" MaxLength="20" />
+          <Property Name="BaseSalary" Type="float" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpNo" />
+          </Key>
+          <Property Name="EmpNo" Type="int" Nullable="false" />
+          <Property Name="FullName" Type="varchar" MaxLength="30" />
+          <Property Name="Sex" Type="varchar" MaxLength="1" />
+          <Property Name="DOB" Type="varchar" MaxLength="30" />
+          <Property Name="Job" Type="varchar" MaxLength="20" />
+          <Property Name="Location" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'C:\USERS\MON CHANDEN\ONEDRIVE\DOCUMENTS\UNIVERSITY\ACLEDA Y2S2\C#\EMPLOYEEDB\EMPLOYEEDB.MDF.dbo.EmployeeSalary' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="EmployeeSalary">
+          <Property Name="EmpNo" Type="int" />
+          <Property Name="RemitDate" Type="varchar" MaxLength="30" />
+          <Property Name="PositionNo" Type="varchar" MaxLength="10" />
+          <Property Name="TimeWorkNo" Type="varchar" MaxLength="10" />
+          <Property Name="OtherWage" Type="float" />
+          <Property Name="GrossSalary" Type="float" />
+          <Property Name="TaxDeducted" Type="float" />
+          <Property Name="NetSalary" Type="float" />
+          <Property Name="AccountantNo" Type="varchar" MaxLength="10" />
+          <Property Name="StatusNo" Type="varchar" MaxLength="10" />
+        </EntityType>-->
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="StatusNo" />
+          </Key>
+          <Property Name="StatusNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--Errors Found During Generation:
+error 6004: The table 'C:\USERS\MON CHANDEN\ONEDRIVE\DOCUMENTS\UNIVERSITY\ACLEDA Y2S2\C#\EMPLOYEEDB\EMPLOYEEDB.MDF.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__Accou__4222D4EF" />-->
+        <!--Errors Found During Generation:
+error 6004: The table 'C:\USERS\MON CHANDEN\ONEDRIVE\DOCUMENTS\UNIVERSITY\ACLEDA Y2S2\C#\EMPLOYEEDB\EMPLOYEEDB.MDF.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__EmpNo__3F466844" />-->
+        <!--Errors Found During Generation:
+error 6004: The table 'C:\USERS\MON CHANDEN\ONEDRIVE\DOCUMENTS\UNIVERSITY\ACLEDA Y2S2\C#\EMPLOYEEDB\EMPLOYEEDB.MDF.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__Posit__403A8C7D" />-->
+        <!--Errors Found During Generation:
+error 6004: The table 'C:\USERS\MON CHANDEN\ONEDRIVE\DOCUMENTS\UNIVERSITY\ACLEDA Y2S2\C#\EMPLOYEEDB\EMPLOYEEDB.MDF.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__Statu__4316F928" />-->
+        <!--Errors Found During Generation:
+error 6004: The table 'C:\USERS\MON CHANDEN\ONEDRIVE\DOCUMENTS\UNIVERSITY\ACLEDA Y2S2\C#\EMPLOYEEDB\EMPLOYEEDB.MDF.dbo.EmployeeSalary' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__EmployeeS__TimeW__412EB0B6" />-->
+        <EntityContainer Name="EmployeeDBModelStoreContainer">
+          <EntitySet Name="Accountant" EntityType="Self.Accountant" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Allowance" EntityType="Self.Allowance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BaseSalary" EntityType="Self.BaseSalary" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmployeeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Accountant">
+          <Key>
+            <PropertyRef Name="AccountantNo" />
+          </Key>
+          <Property Name="AccountantNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccountantName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Allowance">
+          <Key>
+            <PropertyRef Name="TimeWorkNo" />
+          </Key>
+          <Property Name="TimeWorkNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TimeWork" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Allowance1" Type="Double" />
+        </EntityType>
+        <EntityType Name="BaseSalary">
+          <Key>
+            <PropertyRef Name="PositionNo" />
+          </Key>
+          <Property Name="PositionNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Position" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BaseSalary1" Type="Double" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpNo" />
+          </Key>
+          <Property Name="EmpNo" Type="Int32" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Sex" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Job" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="StatusNo" />
+          </Key>
+          <Property Name="StatusNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Status1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="EmployeeDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Accountants" EntityType="Self.Accountant" />
+          <EntitySet Name="Allowances" EntityType="Self.Allowance" />
+          <EntitySet Name="BaseSalaries" EntityType="Self.BaseSalary" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Status" EntityType="Self.Status" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmployeeDBModelStoreContainer" CdmEntityContainer="EmployeeDBEntities">
+          <EntitySetMapping Name="Accountants">
+            <EntityTypeMapping TypeName="EmployeeDBModel.Accountant">
+              <MappingFragment StoreEntitySet="Accountant">
+                <ScalarProperty Name="AccountantNo" ColumnName="AccountantNo" />
+                <ScalarProperty Name="AccountantName" ColumnName="AccountantName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Allowances">
+            <EntityTypeMapping TypeName="EmployeeDBModel.Allowance">
+              <MappingFragment StoreEntitySet="Allowance">
+                <ScalarProperty Name="TimeWorkNo" ColumnName="TimeWorkNo" />
+                <ScalarProperty Name="TimeWork" ColumnName="TimeWork" />
+                <ScalarProperty Name="Allowance1" ColumnName="Allowance" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BaseSalaries">
+            <EntityTypeMapping TypeName="EmployeeDBModel.BaseSalary">
+              <MappingFragment StoreEntitySet="BaseSalary">
+                <ScalarProperty Name="PositionNo" ColumnName="PositionNo" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="BaseSalary1" ColumnName="BaseSalary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="EmployeeDBModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Status">
+            <EntityTypeMapping TypeName="EmployeeDBModel.Status">
+              <MappingFragment StoreEntitySet="Status">
+                <ScalarProperty Name="StatusNo" ColumnName="StatusNo" />
+                <ScalarProperty Name="Status1" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
