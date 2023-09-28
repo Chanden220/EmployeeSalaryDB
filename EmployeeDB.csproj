@@ -121,6 +121,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountantDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AllEmployeeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllEmployeeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AllEmployeeSalaryDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,6 +151,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeSalaryDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmployeeReportViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmployeeReportViews.Designer.cs">
+      <DependentUpon>EmployeeReportViews.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EmployeeSalaryReport.cs">
       <SubType>Form</SubType>
@@ -246,12 +257,6 @@
     <Compile Include="Forms\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EmployeeReportView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EmployeeReportView.Designer.cs">
-      <DependentUpon>EmployeeReportView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\EmployeeSalaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,8 +311,8 @@
     <EmbeddedResource Include="Forms\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EmployeeReportView.resx">
-      <DependentUpon>EmployeeReportView.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EmployeeReportViews.resx">
+      <DependentUpon>EmployeeReportViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EmployeeSalaryForm.resx">
       <DependentUpon>EmployeeSalaryForm.cs</DependentUpon>
@@ -355,6 +360,17 @@
     </None>
     <None Include="AccountantDataSet.xss">
       <DependentUpon>AccountantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllEmployeeDataSet.xsc">
+      <DependentUpon>AllEmployeeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllEmployeeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllEmployeeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllEmployeeDataSet.xss">
+      <DependentUpon>AllEmployeeDataSet.xsd</DependentUpon>
     </None>
     <None Include="AllEmployeeSalaryDataSet.xsc">
       <DependentUpon>AllEmployeeSalaryDataSet.xsd</DependentUpon>

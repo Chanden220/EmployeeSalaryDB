@@ -45,22 +45,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LblEmployee = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Accountant = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtUser = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.a = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblEmployeeSalaryAll = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -74,19 +70,19 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.employeeSalaryTableAdapter = new EmployeeDB.jkabTableAdapters.EmployeeSalaryTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeSalaryBindingSource)).BeginInit();
@@ -98,6 +94,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -137,7 +137,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333332F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333332F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.333332F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(833, 608);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1062, 672);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -145,10 +145,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(86, 53);
+            this.panel1.Location = new System.Drawing.Point(109, 59);
             this.panel1.Name = "panel1";
             this.tableLayoutPanel1.SetRowSpan(this.panel1, 2);
-            this.panel1.Size = new System.Drawing.Size(160, 94);
+            this.panel1.Size = new System.Drawing.Size(206, 106);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -166,7 +166,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 94);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(206, 106);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
@@ -175,29 +175,17 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 23);
+            this.label1.Size = new System.Drawing.Size(127, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Employee";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::EmployeeDB.Properties.Resources.icons8_employee_80;
-            this.pictureBox1.Location = new System.Drawing.Point(107, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.tableLayoutPanel2.SetRowSpan(this.pictureBox1, 2);
-            this.pictureBox1.Size = new System.Drawing.Size(50, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // LblEmployee
             // 
             this.LblEmployee.AutoSize = true;
             this.LblEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblEmployee.Location = new System.Drawing.Point(3, 23);
+            this.LblEmployee.Location = new System.Drawing.Point(3, 26);
             this.LblEmployee.Name = "LblEmployee";
-            this.LblEmployee.Size = new System.Drawing.Size(98, 47);
+            this.LblEmployee.Size = new System.Drawing.Size(127, 53);
             this.LblEmployee.TabIndex = 2;
             this.LblEmployee.Text = "0";
             this.LblEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -207,10 +195,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this.tableLayoutPanel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(252, 53);
+            this.panel2.Location = new System.Drawing.Point(321, 59);
             this.panel2.Name = "panel2";
             this.tableLayoutPanel1.SetRowSpan(this.panel2, 2);
-            this.panel2.Size = new System.Drawing.Size(160, 94);
+            this.panel2.Size = new System.Drawing.Size(206, 106);
             this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -228,7 +216,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(160, 94);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(206, 106);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label2
@@ -237,29 +225,17 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 23);
+            this.label2.Size = new System.Drawing.Size(127, 26);
             this.label2.TabIndex = 0;
             this.label2.Text = "Accountant";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::EmployeeDB.Properties.Resources.icons8_customer_64;
-            this.pictureBox2.Location = new System.Drawing.Point(107, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.tableLayoutPanel3.SetRowSpan(this.pictureBox2, 2);
-            this.pictureBox2.Size = new System.Drawing.Size(50, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // Accountant
             // 
             this.Accountant.AutoSize = true;
             this.Accountant.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Accountant.Location = new System.Drawing.Point(3, 23);
+            this.Accountant.Location = new System.Drawing.Point(3, 26);
             this.Accountant.Name = "Accountant";
-            this.Accountant.Size = new System.Drawing.Size(98, 47);
+            this.Accountant.Size = new System.Drawing.Size(127, 53);
             this.Accountant.TabIndex = 3;
             this.Accountant.Text = "label6";
             this.Accountant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,10 +245,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel3, 2);
             this.panel3.Controls.Add(this.tableLayoutPanel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(418, 53);
+            this.panel3.Location = new System.Drawing.Point(533, 59);
             this.panel3.Name = "panel3";
             this.tableLayoutPanel1.SetRowSpan(this.panel3, 2);
-            this.panel3.Size = new System.Drawing.Size(160, 94);
+            this.panel3.Size = new System.Drawing.Size(206, 106);
             this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel4
@@ -290,7 +266,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(160, 94);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(206, 106);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // label3
@@ -299,29 +275,17 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 23);
+            this.label3.Size = new System.Drawing.Size(127, 26);
             this.label3.TabIndex = 0;
             this.label3.Text = "User";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = global::EmployeeDB.Properties.Resources.icons8_user_100;
-            this.pictureBox3.Location = new System.Drawing.Point(107, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.tableLayoutPanel4.SetRowSpan(this.pictureBox3, 2);
-            this.pictureBox3.Size = new System.Drawing.Size(50, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
             // 
             // txtUser
             // 
             this.txtUser.AutoSize = true;
             this.txtUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtUser.Location = new System.Drawing.Point(3, 23);
+            this.txtUser.Location = new System.Drawing.Point(3, 26);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(98, 47);
+            this.txtUser.Size = new System.Drawing.Size(127, 53);
             this.txtUser.TabIndex = 3;
             this.txtUser.Text = "label7";
             this.txtUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,10 +295,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel4, 2);
             this.panel4.Controls.Add(this.tableLayoutPanel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(584, 53);
+            this.panel4.Location = new System.Drawing.Point(745, 59);
             this.panel4.Name = "panel4";
             this.tableLayoutPanel1.SetRowSpan(this.panel4, 2);
-            this.panel4.Size = new System.Drawing.Size(160, 94);
+            this.panel4.Size = new System.Drawing.Size(206, 106);
             this.panel4.TabIndex = 3;
             // 
             // tableLayoutPanel5
@@ -352,7 +316,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(160, 94);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(206, 106);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // a
@@ -361,29 +325,17 @@
             this.a.Dock = System.Windows.Forms.DockStyle.Fill;
             this.a.Location = new System.Drawing.Point(3, 0);
             this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(98, 23);
+            this.a.Size = new System.Drawing.Size(127, 26);
             this.a.TabIndex = 0;
             this.a.Text = "AllSalary";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox4.Image = global::EmployeeDB.Properties.Resources.icons8_bill_64;
-            this.pictureBox4.Location = new System.Drawing.Point(107, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.tableLayoutPanel5.SetRowSpan(this.pictureBox4, 2);
-            this.pictureBox4.Size = new System.Drawing.Size(50, 64);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
             // 
             // lblEmployeeSalaryAll
             // 
             this.lblEmployeeSalaryAll.AutoSize = true;
             this.lblEmployeeSalaryAll.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblEmployeeSalaryAll.Location = new System.Drawing.Point(3, 23);
+            this.lblEmployeeSalaryAll.Location = new System.Drawing.Point(3, 26);
             this.lblEmployeeSalaryAll.Name = "lblEmployeeSalaryAll";
-            this.lblEmployeeSalaryAll.Size = new System.Drawing.Size(98, 47);
+            this.lblEmployeeSalaryAll.Size = new System.Drawing.Size(127, 53);
             this.lblEmployeeSalaryAll.TabIndex = 3;
             this.lblEmployeeSalaryAll.Text = "label8";
             this.lblEmployeeSalaryAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -393,10 +345,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel5, 3);
             this.panel5.Controls.Add(this.chart1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(86, 153);
+            this.panel5.Location = new System.Drawing.Point(109, 171);
             this.panel5.Name = "panel5";
             this.tableLayoutPanel1.SetRowSpan(this.panel5, 4);
-            this.panel5.Size = new System.Drawing.Size(243, 194);
+            this.panel5.Size = new System.Drawing.Size(312, 218);
             this.panel5.TabIndex = 4;
             // 
             // chart1
@@ -414,7 +366,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(243, 194);
+            this.chart1.Size = new System.Drawing.Size(312, 218);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Status";
             // 
@@ -438,10 +390,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel7, 5);
             this.panel7.Controls.Add(this.chart3);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(86, 353);
+            this.panel7.Location = new System.Drawing.Point(109, 395);
             this.panel7.Name = "panel7";
             this.tableLayoutPanel1.SetRowSpan(this.panel7, 4);
-            this.panel7.Size = new System.Drawing.Size(409, 194);
+            this.panel7.Size = new System.Drawing.Size(524, 218);
             this.panel7.TabIndex = 6;
             // 
             // chart3
@@ -457,7 +409,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Employees";
             this.chart3.Series.Add(series2);
-            this.chart3.Size = new System.Drawing.Size(409, 194);
+            this.chart3.Size = new System.Drawing.Size(524, 218);
             this.chart3.TabIndex = 0;
             this.chart3.Text = "chart3";
             // 
@@ -466,10 +418,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel8, 3);
             this.panel8.Controls.Add(this.chart4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(501, 353);
+            this.panel8.Location = new System.Drawing.Point(639, 395);
             this.panel8.Name = "panel8";
             this.tableLayoutPanel1.SetRowSpan(this.panel8, 4);
-            this.panel8.Size = new System.Drawing.Size(243, 194);
+            this.panel8.Size = new System.Drawing.Size(312, 218);
             this.panel8.TabIndex = 7;
             // 
             // chart4
@@ -485,7 +437,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Employee";
             this.chart4.Series.Add(series3);
-            this.chart4.Size = new System.Drawing.Size(243, 194);
+            this.chart4.Size = new System.Drawing.Size(312, 218);
             this.chart4.TabIndex = 0;
             this.chart4.Text = "chart4";
             // 
@@ -494,10 +446,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.panel6, 5);
             this.panel6.Controls.Add(this.chart2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(335, 153);
+            this.panel6.Location = new System.Drawing.Point(427, 171);
             this.panel6.Name = "panel6";
             this.tableLayoutPanel1.SetRowSpan(this.panel6, 4);
-            this.panel6.Size = new System.Drawing.Size(409, 194);
+            this.panel6.Size = new System.Drawing.Size(524, 218);
             this.panel6.TabIndex = 5;
             // 
             // chart2
@@ -513,7 +465,7 @@
             series4.Legend = "Legend1";
             series4.Name = "Total Salary";
             this.chart2.Series.Add(series4);
-            this.chart2.Size = new System.Drawing.Size(409, 194);
+            this.chart2.Size = new System.Drawing.Size(524, 218);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart2";
             // 
@@ -521,11 +473,59 @@
             // 
             this.employeeSalaryTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::EmployeeDB.Properties.Resources.icons8_employee_80;
+            this.pictureBox1.Location = new System.Drawing.Point(136, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.tableLayoutPanel2.SetRowSpan(this.pictureBox1, 2);
+            this.pictureBox1.Size = new System.Drawing.Size(67, 73);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::EmployeeDB.Properties.Resources.icons8_customer_64;
+            this.pictureBox2.Location = new System.Drawing.Point(136, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.tableLayoutPanel3.SetRowSpan(this.pictureBox2, 2);
+            this.pictureBox2.Size = new System.Drawing.Size(67, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::EmployeeDB.Properties.Resources.icons8_user_100;
+            this.pictureBox3.Location = new System.Drawing.Point(136, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.tableLayoutPanel4.SetRowSpan(this.pictureBox3, 2);
+            this.pictureBox3.Size = new System.Drawing.Size(67, 73);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::EmployeeDB.Properties.Resources.icons8_bill_64;
+            this.pictureBox4.Location = new System.Drawing.Point(136, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.tableLayoutPanel5.SetRowSpan(this.pictureBox4, 2);
+            this.pictureBox4.Size = new System.Drawing.Size(67, 73);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 608);
+            this.ClientSize = new System.Drawing.Size(1062, 672);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Dashboard";
             this.Text = "DaskBoard";
@@ -534,19 +534,15 @@
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeSalaryBindingSource)).EndInit();
@@ -558,6 +554,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }

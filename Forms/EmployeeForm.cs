@@ -132,7 +132,7 @@ namespace EmployeeDB
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            EmployeeReportView employeeReportView = new EmployeeReportView();
+            EmployeeReportViews employeeReportView = new EmployeeReportViews();
             employeeReportView.Show();
             this.Close();
         }
